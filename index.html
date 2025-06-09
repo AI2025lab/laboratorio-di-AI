@@ -292,9 +292,11 @@
                 <a href="#intro" class="active">HOME</a>
                 <a href="#vantaggi">VANTAGGI</a>
                 <a href="#funzionamento">COME FUNZIONA</a>
+                <a href="#guida-chatbot">GUIDA CHATBOT</a>
                 <a href="#tecnologia">TECNOLOGIA</a>
+                <a href="#perche-gemini">PERCHÉ GEMINI PRO</a>
                 <a href="#modello-business">BUSINESS MODEL</a>
-                <a href="#casi-utilizzo">CASI DI UTILIZZO</a> <!-- Link aggiornato -->
+                <a href="#casi-utilizzo">CASI DI UTILIZZO</a>
             </nav>
         </div>
     </header>
@@ -381,6 +383,48 @@
             </div>
         </section>
 
+        <!-- Guida all'Utilizzo Section -->
+        <section id="guida-chatbot">
+            <a href="#guida-chatbot" class="section-title-link"><h2>GUIDA ALL'UTILIZZO</h2><div class="section-title-lines"><div class="line-bg"></div><div class="line-accent"></div></div></a>
+            <div class="container">
+                <p>Segui questi passaggi per testare le funzionalità complete di AutoCare.AI e ottenere un preventivo di esempio.</p>
+                <ol class="steps-list">
+                    <li class="step-item">
+                        <div class="step-number">1.</div>
+                        <div class="step-content">
+                            <h4>Scarica l'immagine di test</h4>
+                            <p>Per prima cosa, scarica l'immagine di una portiera danneggiata che useremo per il test. <a href="https://i.postimg.cc/jCVLs8cZ/portiera-test.jpg" target="_blank" rel="noopener noreferrer">Clicca qui per scaricare</a>.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-number">2.</div>
+                        <div class="step-content">
+                            <h4>Interagisci con il Chatbot</h4>
+                            <p>Una volta sul <a href="https://ai2025lab.github.io/Autocare.AI_Chatbot/" target="_blank" rel="noopener noreferrer">chatbot</a>, segui le sue richieste fornendo in sequenza: Nome e Cognome, Targa del veicolo, Modello e Chilometraggio.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-number">3.</div>
+                        <div class="step-content">
+                            <h4>Carica l'immagine</h4>
+                            <p>Quando richiesto, carica l'immagine della portiera danneggiata che hai scaricato in precedenza per avviare l'analisi.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-number">4.</div>
+                        <div class="step-content">
+                            <h4>Richiedi le carrozzerie</h4>
+                            <p>Dopo aver ricevuto il preventivo, chiedi di visualizzare le "carrozzerie più vicine" per vederle apparire sulla mappa interattiva.</p>
+                        </div>
+                    </li>
+                </ol>
+                <p style="margin-top: 40px; padding: 20px; border: 1px solid var(--color-border); border-radius: 8px; background-color: rgba(var(--color-border-rgb), 0.05); text-align: center; font-size: 14px;">
+                    <strong style="color: var(--color-text); display: block; margin-bottom: 5px;">DISCLAIMER IMPORTANTE</strong>
+                    Il chatbot segue rigorosamente questa procedura perché gli sono state fornite istruzioni precise tramite prompting interno. Questo flusso guidato assicura che tutti i dati necessari vengano raccolti correttamente prima di procedere.
+                </p>
+            </div>
+        </section>
+
         <!-- Scrolling Text Section -->
         <section class="scrolling-text-section" style="padding: 40px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
             <div class="scrolling-text-outer">
@@ -417,12 +461,25 @@
         <section id="tecnologia">
              <a href="#tecnologia" class="section-title-link"><h2>TECNOLOGIA UTILIZZATA</h2><div class="section-title-lines"><div class="line-bg"></div><div class="line-accent"></div></div></a>
             <div class="container">
-                 <p>AutoCare.AI si basa su Google Gemini Flash 2.5 PRO. Lo abbiamo realizzato utilizzando:</p>
+                 <p>AutoCare.AI si basa sul potente modello LLM di Google, Gemini Pro. Per la sua realizzazione abbiamo utilizzato:</p>
                  <ul class="simple-list">
                     <li><strong>Chiave API -</strong> Abbiamo utilizzato la chiave API gratuita di Google AI Studio e di Google Maps</li>
                     <li><strong>Architettura del Chatbot -</strong> Abbiamo utilizzato Flowise AI per il prompting e per il flusso del chatbot</li>
                     <li><strong>Strumenti di sviluppo -</strong> Abbiamo utilizzato Visual Studio Code per la personalizzazione grafica</li>
-                    <li><strong>Cloude Self Hosting -</strong> Abbiamo reso online il progetto mediante self hosting gratuito su Github Pages</li>
+                    <li><strong>Cloud Self Hosting -</strong> Abbiamo reso online il progetto mediante self hosting gratuito su Github Pages</li>
+                 </ul>
+            </div>
+        </section>
+
+        <!-- Perché Gemini Pro Section -->
+        <section id="perche-gemini">
+             <a href="#perche-gemini" class="section-title-link"><h2>PERCHÉ GEMINI PRO</h2><div class="section-title-lines"><div class="line-bg"></div><div class="line-accent"></div></div></a>
+            <div class="container">
+                 <p>La scelta del modello LLM (Large Language Model) è stata un punto cruciale nello sviluppo di AutoCare.AI. Abbiamo scelto Google Gemini Pro per i seguenti motivi strategici:</p>
+                 <ul class="simple-list">
+                    <li><strong>Gratuito con API Key Dedicata:</strong> A differenza di altri modelli di punta come GPT-4, Gemini Pro è utilizzabile gratuitamente tramite la chiave API di Google AI Studio. Questo ci ha permesso di sviluppare una soluzione potente e sostenibile, abbattendo le barriere di costo.</li>
+                    <li><strong>Image Recognition Integrata:</strong> Gemini Pro è un modello nativamente multimodale. La sua capacità di analizzare e comprendere le immagini dei danni senza richiedere API o servizi esterni è il cuore di AutoCare.AI, semplificando l'architettura e garantendo un'analisi rapida e integrata.</li>
+                    <li><strong>Modello all'Avanguardia:</strong> Abbiamo scelto Gemini Pro perché è il modello più avanzato di Google attualmente disponibile sul mercato. Questo garantisce un'elevata qualità nell'analisi, nella generazione dei testi e nella comprensione delle richieste complesse degli utenti.</li>
                  </ul>
             </div>
         </section>
